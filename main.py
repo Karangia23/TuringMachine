@@ -30,17 +30,56 @@ class TurMachine:
                     for case in cases:
                         startPos = cases[case]+1
                         symbol = line[startPos]
+                        a = []
                         i = 0
                         while symbol != '#':
                             if symbol == 'l':
-                                pass
+                                temp = ''
+                                i+= 1
+                                symbol = line[startPos + i]
+                                while symbol != ' ':
+                                    temp += symbol
+                                    i+= 1
+                                    symbol = line[startPos + i]
+                                k = self.moveLeft(int(temp))
+                                a.append(k)
+
                             elif symbol == 'r':
-                                pass
+                                temp = ''
+                                i+= 1
+                                symbol = line[startPos + i]
+                                while symbol != ' ':
+                                    temp += symbol
+                                    i+= 1
+                                    symbol = line[startPos + i]
+                                k = self.moveRight(int(temp))
+                                a.append(k)
+
                             elif symbol == 'g':
-                                pass
+                                k = self.headRead()
+                                a.append(k)
+
                             elif symbol == 'w':
-                                pass
+                                temp = ''
+                                i+= 1
+                                while symbol != ' ':
+                                    symbol = line[startPos + i]
+                                    temp += symbol
+                                    i+= 1
+                                k = self.headWrite(temp)
+                                a.append(k)
+
                             elif symbol == '$':
+                                temp = ''
+                                i+= 1
+                                symbol = line[startPos + i]
+                                while symbol != ' ':
+                                    temp += symbol
+                                    i+= 1
+                                    symbol = line[startPos + i]
+                                k = self.changeState(temp)
+                                a.append(k)                                
+                                
                                 pass
                             i += 1
                             symbol = line[startPos + i]
