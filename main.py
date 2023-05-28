@@ -1,133 +1,91 @@
 import re
+from functools import partial
 
 class TurMachine:
     def __init__(self,file):
         self.turMachineName
         self.alphabet = []
         self.tape = []#[[1,2,3,4],[-,-,-,-,-,-]]
-        self.states = []
+        self.states = {} #{state1:{AZ: [a(),b(),c()]; BZ: doZ}}
         self.currentState
         self.acceptState
-        self.rejectState
-
-        tapeNumber = 0
-        nameStates = []
+        self.head = []
+        self.tapeNumber = 0
+        self.nameStates = []
         lineNumber = 0
         with open(file, "r") as f:
-            for line in f:
+            myF = iter(f)
+            for line in myF:
                 if lineNumber == 0:
                     self.turMachineName = line
                 elif lineNumber == 1:
                     self.acceptState = line
                 elif lineNumber == 2:
-                    self.rejectState = line
-                elif lineNumber == 3:
                     self.tapeNumber = (int(line))
-                elif lineNumber % 2 == 0:
-                    stateName = ''
+                    for i in range(int(line)):
+                        self.tape.append([])
+                        self.head.append(0)
+                elif line[0].isalpha():
                     reStateName = re.search("^(\w)[\w]+,", line)
-                    reStateName.endpos()
-
-                    reWhatToLookUp = re.search("^,(\w)+")
+                    stateName = reStateName.group()
+                    reWhatToLookUp = re.search("(?<=,).+", line)
+                    valuesInTapes = reWhatToLookUp.group()
+                    temp = valuesInTapes.split(',')
+                    valuesInTapes = "".join(str(x) for x in temp)
+                    next(f)
+                    reNewState = re.search("^(\w)[\w]+,", line)
+                    newState = reNewState.group()
+                    temp = re.search("(?<=,).+", line)
+                    whatToDo = "".join(str(x) for x in temp)
+                    j = []
+                    for i in range(len(self.tape)):
+                        k = partial(self.headWrite, whatToDo[i], i)
+                        j.append(k)
+                    for i in range(len(self.tape), len(whatToDo)-1):
+                        currentTape = i-len(self.tape)
+                        if whatToDo[i] == '<':
+                            k= partial(self.moveLeft, currentTape)
+                            j.append(k)
+                        elif whatToDo[i] == '>':
+                            k = partial(self.moveRight, currentTape)
+                            j.append(k)
+                    k = partial(self.changeState, newState)
+                    j.append(k)
+                    self.states[stateName][valuesInTapes][j]
                     
                         
-                        
                     #sczytac dwie linijki
-                    pass #tu co na pierwszej linijce
+                    #tu co na pierwszej linijce
                 lineNumber += 1
 
-                #dodac licznik liijek
-                #pierwsza linijka nazwa_stanu, co_na_kolejnych_tasmach
-                #druga linijka nastepnyStan,coMaNapisacNakolejnychTasmachOdzielonePrzecinkami,JakLbySieMajaRuszac
-        # with open(file, "r") as f:
-        #     lineNumber = 0
-        #     for line in f:
-        #         if lineNumber == 0:
-        #             #first line in file corresponds to alphabet
-        #             for char in line:
-        #                 self.alphabet.append(char)
-        #         elif lineNumber == 1:
-        #             #second line are the names of the states
-        #             for word in line:
-        #                 nameStates.append(word)
-        #         elif line == "":
-        #             break
-        #         else:
-        #             cases = {}
-        #             state = nameStates[lineNumber-2]
-        #             for i in re.finditer('/(+/)', line):
-        #                 cases[(line[(i.start()+i.end())/2])] = i.end()
-        #             for case in cases:
-        #                 startPos = cases[case]+1
-        #                 symbol = line[startPos]
-        #                 a = []
-        #                 i = 0
-        #                 while symbol != '#':
-        #                     if symbol == 'l':
-        #                         temp = ''
-        #                         i+= 1
-        #                         symbol = line[startPos + i]
-        #                         while symbol != ' ':
-        #                             temp += symbol
-        #                             i+= 1
-        #                             symbol = line[startPos + i]
-        #                         k = self.moveLeft(int(temp))
-        #                         a.append(k)
-
-        #                     elif symbol == 'r':
-        #                         temp = ''
-        #                         i+= 1
-        #                         symbol = line[startPos + i]
-        #                         while symbol != ' ':
-        #                             temp += symbol
-        #                             i+= 1
-        #                             symbol = line[startPos + i]
-        #                         k = self.moveRight(int(temp))
-        #                         a.append(k)
-
-        #                     elif symbol == 'g':
-        #                         k = self.headRead()
-        #                         a.append(k)
-
-        #                     elif symbol == 'w':
-        #                         temp = ''
-        #                         i+= 1
-        #                         while symbol != ' ':
-        #                             symbol = line[startPos + i]
-        #                             temp += symbol
-        #                             i+= 1
-        #                         k = self.headWrite(temp)
-        #                         a.append(k)
-
-        #                     elif symbol == '$':
-        #                         temp = ''
-        #                         i+= 1
-        #                         symbol = line[startPos + i]
-        #                         while symbol != ' ':
-        #                             temp += symbol
-        #                             i+= 1
-        #                             symbol = line[startPos + i]
-        #                         k = self.changeState(temp)
-        #                         a.append(k)                                
-                                
-        #                         pass
-        #                     i += 1
-        #                     symbol = line[startPos + i]
-        #         lineNumber += 1
     def headRead(self, tapeNumber = 0):
-        return self.tape[tapeNumber][self.headIndex[tapeNumber]]
+        tape = self.tape[tapeNumber]
+        return tape[self.head[tapeNumber]]
     def headWrite(self, value, tapeNumber = 0):
-        self.tape[tapeNumber][self.headIndex] = value 
-    def moveLeft(self, value=1):
-        if(self.headIndex - value <= 0):
-            raise Exception("Head index cannot be lower than 0")
-        else:
-            self.headIndex -= value
-    def moveRight(self):
-        if(self.headIndex >= len(self.tape)-1):
-            raise Exception("Head index cannot be larger than tape length")
-        else:
-            self.headIndex += 1
+        try:
+            self.tape[tapeNumber][self.head[tapeNumber]] = value
+        except:
+            self.tape[tapeNumber].append(value)
+    def moveLeft(self, tapeNumber=0):
+        self.head[tapeNumber] -= 1
+        if self.head[tapeNumber] < 0:
+            self.tape[tapeNumber]
+    def moveRight(self, tapeNumber = 0):
+        self.head[tapeNumber] -= 1
     def changeState(self, stateName):
         self.currentState = self.states[stateName]
-    def translateState(self):
+    def turkMachine(self, input):
+        self.tape[0] = input
+        l = False
+        while self.currentState != self.acceptState:
+            buffer = ''
+            for i in range(len(self.tape)):
+                buffer +=self.headRead(i)
+            try:
+                self.states[self.currentState][buffer]
+            except:
+                print("Rejected")
+                l = True
+                break
+        if l is False:
+            print("finished without problems")

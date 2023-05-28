@@ -1,6 +1,6 @@
-name: nihilizm
-init: przejdz
-accept: koniec
+nihilizm
+przejdz
+2
 
 /////
 
