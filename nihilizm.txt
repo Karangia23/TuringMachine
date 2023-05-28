@@ -1,0 +1,1844 @@
+name: nihilizm
+init: przejdz
+accept: koniec
+
+/////
+
+kod2,0,A
+kod2,0,A,>,-
+
+kod2,0,B
+kod2,0,B,>,-
+
+kod2,0,C
+kod2,0,C,>,-
+
+kod2,0,D
+kod2,0,D,>,-
+
+kod2,0,E
+kod2,0,E,>,-
+
+kod2,0,F
+kod2,0,F,>,-
+
+kod2,0,1
+kod2,0,1,>,-
+
+kod2,0,2
+kod2,0,2,>,-
+
+kod2,0,3
+kod2,0,3,>,-
+
+kod2,0,4
+kod2,0,4,>,-
+
+kod2,0,5
+kod2,0,5,>,-
+
+///
+
+kod3,0,A
+kod3,0,A,>,-
+
+kod3,0,B
+kod3,0,B,>,-
+
+kod3,0,C
+kod3,0,C,>,-
+
+kod3,0,D
+kod3,0,D,>,-
+
+kod3,0,E
+kod3,0,E,>,-
+
+kod3,0,F
+kod3,0,F,>,-
+
+kod3,0,1
+kod3,0,1,>,-
+
+kod3,0,2
+kod3,0,2,>,-
+
+kod3,0,3
+kod3,0,3,>,-
+
+kod3,0,4
+kod3,0,4,>,-
+
+kod3,0,5
+kod3,0,5,>,-
+
+///
+
+kod4,0,A
+kod4,0,A,>,-
+
+kod4,0,B
+kod4,0,B,>,-
+
+kod4,0,C
+kod4,0,C,>,-
+
+kod4,0,D
+kod4,0,D,>,-
+
+kod4,0,E
+kod4,0,E,>,-
+
+kod4,0,F
+kod4,0,F,>,-
+
+kod4,0,1
+kod4,0,1,>,-
+
+kod4,0,2
+kod4,0,2,>,-
+
+kod4,0,3
+kod4,0,3,>,-
+
+kod4,0,4
+kod4,0,4,>,-
+
+kod4,0,5
+kod4,0,5,>,-
+
+///
+
+kod5,0,A
+kod5,0,A,>,-
+
+kod5,0,B
+kod5,0,B,>,-
+
+kod5,0,C
+kod5,0,C,>,-
+
+kod5,0,D
+kod5,0,D,>,-
+
+kod5,0,E
+kod5,0,E,>,-
+
+kod5,0,F
+kod5,0,F,>,-
+
+kod5,0,1
+kod5,0,1,>,-
+
+kod5,0,2
+kod5,0,2,>,-
+
+kod5,0,3
+kod5,0,3,>,-
+
+kod5,0,4
+kod5,0,4,>,-
+
+kod5,0,5
+kod5,0,5,>,-
+
+///
+
+kod6,0,A
+kod6,0,A,>,-
+
+kod6,0,B
+kod6,0,B,>,-
+
+kod6,0,C
+kod6,0,C,>,-
+
+kod6,0,D
+kod6,0,D,>,-
+
+kod6,0,E
+kod6,0,E,>,-
+
+kod6,0,F
+kod6,0,F,>,-
+
+kod6,0,1
+kod6,0,1,>,-
+
+kod6,0,2
+kod6,0,2,>,-
+
+kod6,0,3
+kod6,0,3,>,-
+
+kod6,0,4
+kod6,0,4,>,-
+
+kod6,0,5
+kod6,0,5,>,-
+
+/////
+
+przejdz, A, _
+przejdz, A, _, >, -
+
+przejdz, _, _
+przenies, _, _, >, -
+
+przejdz, B, _
+przejdz, B, _, >, -
+
+przejdz, C, _
+przejdz, C, _, >, -
+
+przejdz, D, _
+przejdz, D, _, >, -
+
+przejdz, E, _
+przejdz, E, _, >, -
+
+przejdz, F, _
+przejdz, F, _, >, -
+
+///
+
+przenies, A, _
+przenies, _, A, >, >
+
+przenies, _, _
+wroc, _, _, <, -
+
+przenies, B, _
+przenies, _, B, >, >
+
+przenies, C, _
+przenies, _,C, >, >
+
+przenies, D, _
+przenies, _,D, >, >
+
+przenies, E, _
+przenies, _,E, >, >
+
+przenies, F, _
+przenies, _,F, >, >
+
+///
+
+wroc, A, _
+wrocA, A, _, <, -
+
+wroc, B, _
+wrocA, B, _, <, -
+
+wroc, C, _
+wrocA, C, _, <, -
+
+wroc, D, _
+wrocA, D, _, <, -
+
+wroc, E, _
+wrocA, E, _, <, -
+
+wroc, F, _
+wrocA, F, _, <, -
+
+//wroc, 0, _
+//wroc, 0, _, <, -
+
+wroc, _, _
+wroc, _, _, <, -
+
+///
+
+wrocA, A, _
+wrocA, A, _, <, -
+
+wrocA, B, _
+wrocA, B, _, <, -
+
+wrocA, C, _
+wrocA, C, _, <, -
+
+wrocA, D, _
+wrocA, D, _, <, -
+
+wrocA, E, _
+wrocA, E, _, <, -
+
+wrocA, F, _
+wrocA, F, _, <, -
+
+wrocA, 0, _
+wrocA, 0, _, <, -
+
+wrocA, _, _
+szukajA, _, _, >, -
+
+/////////////////////////////////////////////////////////////////////////
+
+szukajA, A, _
+usunA, A, _, >, -
+
+szukajA, _, _
+wrocB, A, _, <, -
+
+szukajA, B, _
+szukajA, B, _, >, -
+
+szukajA, C, _
+szukajA, C, _, >, -
+
+szukajA, D, _
+szukajA, D, _, >, -
+
+szukajA, E, _
+szukajA, E, _, >, -
+
+szukajA, F, _
+szukajA, F, _, >, -
+
+szukajA, 0, _
+szukajA, 0, _, >, -
+
+///
+
+usunA, A, _
+usunA, 0, _, >, -
+
+usunA, _, _
+wrocB, _, _, <, -
+
+usunA, B, _
+usunA, B, _, >, -
+
+usunA, C, _
+usunA, C, _, >, -
+
+usunA, D, _
+usunA, D, _, >, -
+
+usunA, E, _
+usunA, E, _, >, -
+
+usunA, F, _
+usunA, F, _, >, -
+
+usunA, 0, _
+usunA, 0, _, >, -
+
+///
+
+wrocB, A, _
+wrocB, A, _, <, -
+
+wrocB, B, _
+wrocB, B, _, <, -
+
+wrocB, C, _
+wrocB, C, _, <, -
+
+wrocB, D, _
+wrocB, D, _, <, -
+
+wrocB, E, _
+wrocB, E, _, <, -
+
+wrocB, F, _
+wrocB, F, _, <, -
+
+wrocB, 0, _
+wrocB, 0, _, <, -
+
+wrocB, _, _
+szukajB, _, _, >, -
+
+///////////////////
+
+
+szukajB, A, _
+szukajB, A, _, >, -
+
+szukajB, _, _
+wrocC, B, _, <, -
+
+szukajB, B, _
+usunB, B, _, >, -
+
+szukajB, C, _
+szukajB, C, _, >, -
+
+szukajB, D, _
+szukajB, D, _, >, -
+
+szukajB, E, _
+szukajB, E, _, >, -
+
+szukajB, F, _
+szukajB, F, _, >, -
+
+szukajB, 0, _
+szukajB, 0, _, >, -
+
+///
+
+usunB, A, _
+usunB, A, _, >, -
+
+usunB, _, _
+wrocC, _, _, <, -
+
+usunB, B, _
+usunB, 0, _, >, -
+
+usunB, C, _
+usunB, C, _, >, -
+
+usunB, D, _
+usunB, D, _, >, -
+
+usunB, E, _
+usunB, E, _, >, -
+
+usunB, F, _
+usunB, F, _, >, -
+
+usunB, 0, _
+usunB, 0, _, >, -
+
+///
+
+wrocC, A, _
+wrocC, A, _, <, -
+
+wrocC, B, _
+wrocC, B, _, <, -
+
+wrocC, C, _
+wrocC, C, _, <, -
+
+wrocC, D, _
+wrocC, D, _, <, -
+
+wrocC, E, _
+wrocC, E, _, <, -
+
+wrocC, F, _
+wrocC, F, _, <, -
+
+wrocC, 0, _
+wrocC, 0, _, <, -
+
+wrocC, _, _
+szukajC, _, _, >, -
+
+///////////////////
+
+
+szukajC, A, _
+szukajC, A, _, >, -
+
+szukajC, _, _
+wrocD, C, _, <, -
+
+szukajC, B, _
+szukajC, B, _, >, -
+
+szukajC, C, _
+usunC, C, _, >, -
+
+szukajC, D, _
+szukajC, D, _, >, -
+
+szukajC, E, _
+szukajC, E, _, >, -
+
+szukajC, F, _
+szukajC, F, _, >, -
+
+szukajC, 0, _
+szukajC, 0, _, >, -
+
+///
+
+usunC, A, _
+usunC, A, _, >, -
+
+usunC, _, _
+wrocD, _, _, <, -
+
+usunC, B, _
+usunC, B, _, >, -
+
+usunC, C, _
+usunC, 0, _, >, -
+
+usunC, D, _
+usunC, D, _, >, -
+
+usunC, E, _
+usunC, E, _, >, -
+
+usunC, F, _
+usunC, F, _, >, -
+
+usunC, 0, _
+usunC, 0, _, >, -
+
+///
+
+wrocD, A, _
+wrocD, A, _, <, -
+
+wrocD, B, _
+wrocD, B, _, <, -
+
+wrocD, C, _
+wrocD, C, _, <, -
+
+wrocD, D, _
+wrocD, D, _, <, -
+
+wrocD, E, _
+wrocD, E, _, <, -
+
+wrocD, F, _
+wrocD, F, _, <, -
+
+wrocD, 0, _
+wrocD, 0, _, <, -
+
+wrocD, _, _
+szukajD, _, _, >, -
+
+///////////////////
+
+szukajD, A, _
+szukajD, A, _, >, -
+
+szukajD, _, _
+wrocE, D, _, <, -
+
+szukajD, B, _
+szukajD, B, _, >, -
+
+szukajD, C, _
+szukajD, C, _, >, -
+
+szukajD, D, _
+usunD, D, _, >, -
+
+szukajD, E, _
+szukajD, E, _, >, -
+
+szukajD, F, _
+szukajD, F, _, >, -
+
+szukajD, 0, _
+szukajD, 0, _, >, -
+
+///
+
+usunD, A, _
+usunD, A, _, >, -
+
+usunD, _, _
+wrocE, _, _, <, -
+
+usunD, B, _
+usunD, B, _, >, -
+
+usunD, C, _
+usunD, C, _, >, -
+
+usunD, D, _
+usunD, 0, _, >, -
+
+usunD, E, _
+usunD, E, _, >, -
+
+usunD, F, _
+usunD, F, _, >, -
+
+usunD, 0, _
+usunD, 0, _, >, -
+
+///
+
+wrocE, A, _
+wrocE, A, _, <, -
+
+wrocE, B, _
+wrocE, B, _, <, -
+
+wrocE, C, _
+wrocE, C, _, <, -
+
+wrocE, D, _
+wrocE, D, _, <, -
+
+wrocE, E, _
+wrocE, E, _, <, -
+
+wrocE, F, _
+wrocE, F, _, <, -
+
+wrocE, 0, _
+wrocE, 0, _, <, -
+
+wrocE, _, _
+szukajE, _, _, >, -
+
+///////////////////
+
+szukajE, A, _
+szukajE, A, _, >, -
+
+szukajE, _, _
+wrocF, E, _, <, -
+
+szukajE, B, _
+szukajE, B, _, >, -
+
+szukajE, C, _
+szukajE, C, _, >, -
+
+szukajE, D, _
+szukajE, D, _, >, -
+
+szukajE, E, _
+usunE, E, _, >, -
+
+szukajE, F, _
+szukajE, F, _, >, -
+
+szukajE, 0, _
+szukajE, 0, _, >, -
+
+///
+
+usunE, A, _
+usunE, A, _, >, -
+
+usunE, _, _
+wrocF, _, _, <, -
+
+usunE, B, _
+usunE, B, _, >, -
+
+usunE, C, _
+usunE, C, _, >, -
+
+usunE, D, _
+usunE, D, _, >, -
+
+usunE, E, _
+usunE, 0, _, >, -
+
+usunE, F, _
+usunE, F, _, >, -
+
+usunE, 0, _
+usunE, 0, _, >, -
+
+///
+
+wrocF, A, _
+wrocF, A, _, <, -
+
+wrocF, B, _
+wrocF, B, _, <, -
+
+wrocF, C, _
+wrocF, C, _, <, -
+
+wrocF, D, _
+wrocF, D, _, <, -
+
+wrocF, E, _
+wrocF, E, _, <, -
+
+wrocF, F, _
+wrocF, F, _, <, -
+
+wrocF, 0, _
+wrocF, 0, _, <, -
+
+wrocF, _, _
+szukajF, _, _, >, -
+
+///////////////////
+
+szukajF, A, _
+szukajF, A, _, >, -
+
+szukajF, _, _
+wrock1, F, _, <, -
+
+szukajF, B, _
+szukajF, B, _, >, -
+
+szukajF, C, _
+szukajF, C, _, >, -
+
+szukajF, D, _
+szukajF, D, _, >, -
+
+szukajF, E, _
+szukajF, E, _, >, -
+
+szukajF, F, _
+usunF, F, _, >, -
+
+szukajF, 0, _
+szukajF, 0, _, >, -
+
+///
+
+usunF, A, _
+usunF, A, _, >, -
+
+usunF, _, _
+wrock1, _, _, <, -
+
+usunF, B, _
+usunF, B, _, >, -
+
+usunF, C, _
+usunF, C, _, >, -
+
+usunF, D, _
+usunF, D, _, >, -
+
+usunF, E, _
+usunF, E, _, >, -
+
+usunF, F, _
+usunF, 0, _, >, -
+
+usunF, 0, _
+usunF, 0, _, >, -
+
+////////////////////////////////////////////////////
+
+wrock1, A, _
+wrock1, A, _, <, -
+
+wrock1, B, _
+wrock1, B, _, <, -
+
+wrock1, C, _
+wrock1, C, _, <, -
+
+wrock1, D, _
+wrock1, D, _, <, -
+
+wrock1, E, _
+wrock1, E, _, <, -
+
+wrock1, F, _
+wrock1, F, _, <, -
+
+wrock1, 0, _
+wrock1, 0, _, <, -
+
+wrock1,_,_
+kod1,_,_,>,<
+
+///
+
+kod1,A,A
+kod1,A,1,-,<
+
+kod1,A,B
+kod1,A,B,-,<
+
+kod1,A,C
+kod1,A,C,-,<
+
+kod1,A,D
+kod1,A,D,-,<
+
+kod1,A,E
+kod1,A,E,-,<
+
+kod1,A,F
+kod1,A,F,-,<
+
+kod1,A,_
+kod2,A,_,>,>
+
+///
+
+kod1,B,A
+kod1,B,A,-,<
+
+kod1,B,B
+kod1,B,1,-,<
+
+kod1,B,C
+kod1,B,C,-,<
+
+kod1,B,D
+kod1,B,D,-,<
+
+kod1,B,E
+kod1,B,E,-,<
+
+kod1,B,F
+kod1,B,F,-,<
+
+kod1,B,_
+kod2,B,_,>,>
+
+///
+
+kod1,C,A
+kod1,C,A,-,<
+
+kod1,C,B
+kod1,C,B,-,<
+
+kod1,C,C
+kod1,C,1,-,<
+
+kod1,C,D
+kod1,C,D,-,<
+
+kod1,C,E
+kod1,C,E,-,<
+
+kod1,C,F
+kod1,C,F,-,<
+
+kod1,C,_
+kod2,C,_,>,>
+
+///
+
+kod1,D,A
+kod1,D,A,-,<
+
+kod1,D,B
+kod1,D,B,-,<
+
+kod1,D,C
+kod1,D,C,-,<
+
+kod1,D,D
+kod1,D,1,-,<
+
+kod1,D,E
+kod1,D,E,-,<
+
+kod1,D,F
+kod1,D,F,-,<
+
+kod1,D,_
+kod2,D,_,>,>
+
+///
+
+kod1,E,A
+kod1,E,A,-,<
+
+kod1,E,B
+kod1,E,B,-,<
+
+kod1,E,C
+kod1,E,C,-,<
+
+kod1,E,D
+kod1,E,D,-,<
+
+kod1,E,E
+kod1,E,1,-,<
+
+kod1,E,F
+kod1,E,F,-,<
+
+kod1,E,_
+kod2,E,_,>,>
+
+///
+
+kod1,F,A
+kod1,F,A,-,<
+
+kod1,F,B
+kod1,F,B,-,<
+
+kod1,F,C
+kod1,F,C,-,<
+
+kod1,F,D
+kod1,F,D,-,<
+
+kod1,F,E
+kod1,F,E,-,<
+
+kod1,F,F
+kod1,F,1,-,<
+
+kod1,F,_
+kod2,F,_,>,>
+
+////////////////////////////////////////
+
+kod2,A,1
+kod2,A,1,-,>
+
+kod2,A,A
+kod2,A,2,-,>
+
+kod2,A,B
+kod2,A,B,-,>
+
+kod2,A,C
+kod2,A,C,-,>
+
+kod2,A,D
+kod2,A,D,-,>
+
+kod2,A,E
+kod2,A,E,-,>
+
+kod2,A,F
+kod2,A,F,-,>
+
+kod2,A,_
+kod3,A,_,>,<
+
+///
+
+kod2,B,1
+kod2,B,1,-,>
+
+kod2,B,A
+kod2,B,A,-,>
+
+kod2,B,B
+kod2,B,2,-,>
+
+kod2,B,C
+kod2,B,C,-,>
+
+kod2,B,D
+kod2,B,D,-,>
+
+kod2,B,E
+kod2,B,E,-,>
+
+kod2,B,F
+kod2,B,F,-,>
+
+kod2,B,_
+kod3,B,_,>,<
+
+///
+
+kod2,C,1
+kod2,C,1,-,>
+
+kod2,C,A
+kod2,C,A,-,>
+
+kod2,C,B
+kod2,C,B,-,>
+
+kod2,C,C
+kod2,C,2,-,>
+
+kod2,C,D
+kod2,C,D,-,>
+
+kod2,C,E
+kod2,C,E,-,>
+
+kod2,C,F
+kod2,C,F,-,>
+
+kod2,C,_
+kod3,C,_,>,<
+
+///
+
+kod2,D,1
+kod2,D,1,-,>
+
+kod2,D,A
+kod2,D,A,-,>
+
+kod2,D,B
+kod2,D,B,-,>
+
+kod2,D,C
+kod2,D,C,-,>
+
+kod2,D,D
+kod2,D,2,-,>
+
+kod2,D,E
+kod2,D,E,-,>
+
+kod2,D,F
+kod2,D,F,-,>
+
+kod2,D,_
+kod3,D,_,>,<
+
+///
+
+kod2,E,1
+kod2,E,1,-,>
+
+kod2,E,A
+kod2,E,A,-,>
+
+kod2,E,B
+kod2,E,B,-,>
+
+kod2,E,C
+kod2,E,C,-,>
+
+kod2,E,D
+kod2,E,D,-,>
+
+kod2,E,E
+kod2,E,2,-,>
+
+kod2,E,F
+kod2,E,F,-,>
+
+kod2,E,_
+kod3,E,_,>,<
+
+///
+
+kod2,F,1
+kod2,F,1,-,>
+
+kod2,F,A
+kod2,F,A,-,>
+
+kod2,F,B
+kod2,F,B,-,>
+
+kod2,F,C
+kod2,F,C,-,>
+
+kod2,F,D
+kod2,F,D,-,>
+
+kod2,F,E
+kod2,F,E,-,>
+
+kod2,F,F
+kod2,F,2,-,>
+
+kod2,F,_
+kod3,F,_,>,<
+
+////////////////////////////////////////
+
+kod3,A,1
+kod3,A,1,-,<
+
+kod3,A,2
+kod3,A,2,-,<
+
+kod3,A,A
+kod3,A,3,-,<
+
+kod3,A,B
+kod3,A,B,-,<
+
+kod3,A,C
+kod3,A,C,-,<
+
+kod3,A,D
+kod3,A,D,-,<
+
+kod3,A,E
+kod3,A,E,-,<
+
+kod3,A,F
+kod3,A,F,-,<
+
+kod3,A,_
+kod4,A,_,>,>
+
+///
+
+kod3,B,1
+kod3,B,1,-,<
+
+kod3,B,2
+kod3,B,2,-,<
+
+kod3,B,A
+kod3,B,A,-,<
+
+kod3,B,B
+kod3,B,3,-,<
+
+kod3,B,C
+kod3,B,C,-,<
+
+kod3,B,D
+kod3,B,D,-,<
+
+kod3,B,E
+kod3,B,E,-,<
+
+kod3,B,F
+kod3,B,F,-,<
+
+kod3,B,_
+kod4,B,_,>,>
+
+///
+kod3,C,1
+kod3,C,1,-,<
+
+kod3,C,2
+kod3,C,2,-,<
+
+kod3,C,A
+kod3,C,A,-,<
+
+kod3,C,B
+kod3,C,B,-,<
+
+kod3,C,C
+kod3,C,3,-,<
+
+kod3,C,D
+kod3,C,D,-,<
+
+kod3,C,E
+kod3,C,E,-,<
+
+kod3,C,F
+kod3,C,F,-,<
+
+kod3,C,_
+kod4,C,_,>,>
+
+///
+
+kod3,D,1
+kod3,D,1,-,<
+
+kod3,D,2
+kod3,D,2,-,<
+
+kod3,D,A
+kod3,D,A,-,<
+
+kod3,D,B
+kod3,D,B,-,<
+
+kod3,D,C
+kod3,D,C,-,<
+
+kod3,D,D
+kod3,D,3,-,<
+
+kod3,D,E
+kod3,D,E,-,<
+
+kod3,D,F
+kod3,D,F,-,<
+
+kod3,D,_
+kod4,D,_,>,>
+
+///
+
+kod3,E,1
+kod3,E,1,-,<
+
+kod3,E,2
+kod3,E,2,-,<
+
+kod3,E,A
+kod3,E,A,-,<
+
+kod3,E,B
+kod3,E,B,-,<
+
+kod3,E,C
+kod3,E,C,-,<
+
+kod3,E,D
+kod3,E,D,-,<
+
+kod3,E,E
+kod3,E,3,-,<
+
+kod3,E,F
+kod3,E,F,-,<
+
+kod3,E,_
+kod4,E,_,>,>
+
+///
+
+kod3,F,1
+kod3,F,1,-,<
+
+kod3,F,2
+kod3,F,2,-,<
+
+kod3,F,A
+kod3,F,A,-,<
+
+kod3,F,B
+kod3,F,B,-,<
+
+kod3,F,C
+kod3,F,C,-,<
+
+kod3,F,D
+kod3,F,D,-,<
+
+kod3,F,E
+kod3,F,E,-,<
+
+kod3,F,F
+kod3,F,3,-,<
+
+kod3,F,_
+kod4,F,_,>,>
+
+////////////////////////////////////////
+
+kod4,A,1
+kod4,A,1,-,>
+
+kod4,A,2
+kod4,A,2,-,>
+
+kod4,A,3
+kod4,A,3,-,>
+
+kod4,A,A
+kod4,A,4,-,>
+
+kod4,A,B
+kod4,A,B,-,>
+
+kod4,A,C
+kod4,A,C,-,>
+
+kod4,A,D
+kod4,A,D,-,>
+
+kod4,A,E
+kod4,A,E,-,>
+
+kod4,A,F
+kod4,A,F,-,>
+
+kod4,A,_
+kod5,A,_,>,<
+
+///
+
+kod4,B,1
+kod4,B,1,-,>
+
+kod4,B,2
+kod4,B,2,-,>
+
+kod4,B,3
+kod4,B,3,-,>
+
+kod4,B,A
+kod4,B,A,-,>
+
+kod4,B,B
+kod4,B,4,-,>
+
+kod4,B,C
+kod4,B,C,-,>
+
+kod4,B,D
+kod4,B,D,-,>
+
+kod4,B,E
+kod4,B,E,-,>
+
+kod4,B,F
+kod4,B,F,-,>
+
+kod4,B,_
+kod5,B,_,>,<
+
+///
+
+kod4,C,1
+kod4,C,1,-,>
+
+kod4,C,2
+kod4,C,2,-,>
+
+kod4,C,3
+kod4,C,3,-,>
+
+kod4,C,A
+kod4,C,A,-,>
+
+kod4,C,B
+kod4,C,B,-,>
+
+kod4,C,C
+kod4,C,4,-,>
+
+kod4,C,D
+kod4,C,D,-,>
+
+kod4,C,E
+kod4,C,E,-,>
+
+kod4,C,F
+kod4,C,F,-,>
+
+kod4,C,_
+kod5,C,_,>,<
+
+///
+
+kod4,D,1
+kod4,D,1,-,>
+
+kod4,D,2
+kod4,D,2,-,>
+
+kod4,D,3
+kod4,D,3,-,>
+
+kod4,D,A
+kod4,D,A,-,>
+
+kod4,D,B
+kod4,D,B,-,>
+
+kod4,D,C
+kod4,D,C,-,>
+
+kod4,D,D
+kod4,D,4,-,>
+
+kod4,D,E
+kod4,D,E,-,>
+
+kod4,D,F
+kod4,D,F,-,>
+
+kod4,D,_
+kod5,D,_,>,<
+
+///
+
+kod4,E,1
+kod4,E,1,-,>
+
+kod4,E,2
+kod4,E,2,-,>
+
+kod4,E,3
+kod4,E,3,-,>
+
+kod4,E,A
+kod4,E,A,-,>
+
+kod4,E,B
+kod4,E,B,-,>
+
+kod4,E,C
+kod4,E,C,-,>
+
+kod4,E,D
+kod4,E,D,-,>
+
+kod4,E,E
+kod4,E,4,-,>
+
+kod4,E,F
+kod4,E,F,-,>
+
+kod4,E,_
+kod5,E,_,>,<
+
+///
+
+kod4,F,1
+kod4,F,1,-,>
+
+kod4,F,2
+kod4,F,2,-,>
+
+kod4,F,3
+kod4,F,3,-,>
+
+kod4,F,A
+kod4,F,A,-,>
+
+kod4,F,B
+kod4,F,B,-,>
+
+kod4,F,C
+kod4,F,C,-,>
+
+kod4,F,D
+kod4,F,D,-,>
+
+kod4,F,E
+kod4,F,E,-,>
+
+kod4,F,F
+kod4,F,4,-,>
+
+kod4,F,_
+kod5,F,_,>,<
+
+////////////////////////////////////////
+
+kod5,A,1
+kod5,A,1,-,<
+
+kod5,A,2
+kod5,A,2,-,<
+
+kod5,A,3
+kod5,A,3,-,<
+
+kod5,A,4
+kod5,A,4,-,<
+
+kod5,A,A
+kod5,A,5,-,<
+
+kod5,A,B
+kod5,A,B,-,<
+
+kod5,A,C
+kod5,A,C,-,<
+
+kod5,A,D
+kod5,A,D,-,<
+
+kod5,A,E
+kod5,A,E,-,<
+
+kod5,A,F
+kod5,A,F,-,<
+
+kod5,A,_
+kod6,A,_,>,>
+
+///
+
+kod5,B,1
+kod5,B,1,-,<
+
+kod5,B,2
+kod5,B,2,-,<
+
+kod5,B,3
+kod5,B,3,-,<
+
+kod5,B,4
+kod5,B,4,-,<
+
+kod5,B,A
+kod5,B,A,-,<
+
+kod5,B,B
+kod5,B,5,-,<
+
+kod5,B,C
+kod5,B,C,-,<
+
+kod5,B,D
+kod5,B,D,-,<
+
+kod5,B,E
+kod5,B,E,-,<
+
+kod5,B,F
+kod5,B,F,-,<
+
+kod5,B,_
+kod6,B,_,>,>
+
+///
+kod5,C,1
+kod5,C,1,-,<
+
+kod5,C,3
+kod5,C,3,-,<
+
+kod5,C,4
+kod5,C,4,-,<
+
+kod5,C,2
+kod5,C,2,-,<
+
+kod5,C,A
+kod5,C,A,-,<
+
+kod5,C,B
+kod5,C,B,-,<
+
+kod5,C,C
+kod5,C,5,-,<
+
+kod5,C,D
+kod5,C,D,-,<
+
+kod5,C,E
+kod5,C,E,-,<
+
+kod5,C,F
+kod5,C,F,-,<
+
+kod5,C,_
+kod6,C,_,>,>
+
+///
+
+kod5,D,1
+kod5,D,1,-,<
+
+kod5,D,2
+kod5,D,2,-,<
+
+kod5,D,3
+kod5,D,3,-,<
+
+kod5,D,4
+kod5,D,4,-,<
+
+kod5,D,A
+kod5,D,A,-,<
+
+kod5,D,B
+kod5,D,B,-,<
+
+kod5,D,C
+kod5,D,C,-,<
+
+kod5,D,D
+kod5,D,5,-,<
+
+kod5,D,E
+kod5,D,E,-,<
+
+kod5,D,F
+kod5,D,F,-,<
+
+kod5,D,_
+kod6,D,_,>,>
+
+///
+
+kod5,E,1
+kod5,E,1,-,<
+
+kod5,E,2
+kod5,E,2,-,<
+
+kod5,E,3
+kod5,E,3,-,<
+
+kod5,E,4
+kod5,E,4,-,<
+
+kod5,E,A
+kod5,E,A,-,<
+
+kod5,E,B
+kod5,E,B,-,<
+
+kod5,E,C
+kod5,E,C,-,<
+
+kod5,E,D
+kod5,E,D,-,<
+
+kod5,E,E
+kod5,E,5,-,<
+
+kod5,E,F
+kod5,E,F,-,<
+
+kod5,E,_
+kod6,E,_,>,>
+
+///
+
+kod5,F,1
+kod5,F,1,-,<
+
+kod5,F,2
+kod5,F,2,-,<
+
+kod5,F,3
+kod5,F,3,-,<
+
+kod5,F,4
+kod5,F,4,-,<
+
+kod5,F,A
+kod5,F,A,-,<
+
+kod5,F,B
+kod5,F,B,-,<
+
+kod5,F,C
+kod5,F,C,-,<
+
+kod5,F,D
+kod5,F,D,-,<
+
+kod5,F,E
+kod5,F,E,-,<
+
+kod5,F,F
+kod5,F,5,-,<
+
+kod5,F,_
+kod6,F,_,>,>
+
+////////////////////////////////////////
+
+kod6,A,1
+kod6,A,1,-,>
+
+kod6,A,2
+kod6,A,2,-,>
+
+kod6,A,3
+kod6,A,3,-,>
+
+kod6,A,4
+kod6,A,4,-,>
+
+kod6,A,5
+kod6,A,5,-,>
+
+kod6,A,A
+kod6,A,6,-,>
+
+kod6,A,B
+kod6,A,B,-,>
+
+kod6,A,C
+kod6,A,C,-,>
+
+kod6,A,D
+kod6,A,D,-,>
+
+kod6,A,E
+kod6,A,E,-,>
+
+kod6,A,F
+kod6,A,F,-,>
+
+kod6,A,_
+koniec,A,_,>,<
+
+///
+
+kod6,B,1
+kod6,B,1,-,>
+
+kod6,B,2
+kod6,B,2,-,>
+
+kod6,B,3
+kod6,B,3,-,>
+
+kod6,B,4
+kod6,B,4,-,>
+
+kod6,B,5
+kod6,B,5,-,>
+
+kod6,B,A
+kod6,B,A,-,>
+
+kod6,B,B
+kod6,B,6,-,>
+
+kod6,B,C
+kod6,B,C,-,>
+
+kod6,B,D
+kod6,B,D,-,>
+
+kod6,B,E
+kod6,B,E,-,>
+
+kod6,B,F
+kod6,B,F,-,>
+
+kod6,B,_
+koniec,B,_,>,<
+
+///
+
+kod6,C,1
+kod6,C,1,-,>
+
+kod6,C,2
+kod6,C,2,-,>
+
+kod6,C,3
+kod6,C,3,-,>
+
+kod6,C,4
+kod6,C,4,-,>
+
+kod6,C,5
+kod6,C,5,-,>
+
+kod6,C,A
+kod6,C,A,-,>
+
+kod6,C,B
+kod6,C,B,-,>
+
+kod6,C,C
+kod6,C,6,-,>
+
+kod6,C,D
+kod6,C,D,-,>
+
+kod6,C,E
+kod6,C,E,-,>
+
+kod6,C,F
+kod6,C,F,-,>
+
+kod6,C,_
+koniec,C,_,>,<
+
+///
+
+kod6,D,1
+kod6,D,1,-,>
+
+kod6,D,2
+kod6,D,2,-,>
+
+kod6,D,3
+kod6,D,3,-,>
+
+kod6,D,4
+kod6,D,4,-,>
+
+kod6,D,5
+kod6,D,5,-,>
+
+kod6,D,A
+kod6,D,A,-,>
+
+kod6,D,B
+kod6,D,B,-,>
+
+kod6,D,C
+kod6,D,C,-,>
+
+kod6,D,D
+kod6,D,6,-,>
+
+kod6,D,E
+kod6,D,E,-,>
+
+kod6,D,F
+kod6,D,F,-,>
+
+kod6,D,_
+koniec,D,_,>,<
+
+///
+
+kod6,E,1
+kod6,E,1,-,>
+
+kod6,E,2
+kod6,E,2,-,>
+
+kod6,E,3
+kod6,E,3,-,>
+
+kod6,E,4
+kod6,E,4,-,>
+
+kod6,E,5
+kod6,E,5,-,>
+
+kod6,E,A
+kod6,E,A,-,>
+
+kod6,E,B
+kod6,E,B,-,>
+
+kod6,E,C
+kod6,E,C,-,>
+
+kod6,E,D
+kod6,E,D,-,>
+
+kod6,E,E
+kod6,E,6,-,>
+
+kod6,E,F
+kod6,E,F,-,>
+
+kod6,E,_
+koniec,E,_,>,<
+
+///
+
+kod6,F,1
+kod6,F,1,-,>
+
+kod6,F,2
+kod6,F,2,-,>
+
+kod6,F,3
+kod6,F,3,-,>
+
+kod6,F,4
+kod6,F,4,-,>
+
+kod6,F,5
+kod6,F,5,-,>
+
+kod6,F,A
+kod6,F,A,-,>
+
+kod6,F,B
+kod6,F,B,-,>
+
+kod6,F,C
+kod6,F,C,-,>
+
+kod6,F,D
+kod6,F,D,-,>
+
+kod6,F,E
+kod6,F,E,-,>
+
+kod6,F,F
+kod6,F,6,-,>
+
+kod6,F,_
+koniec,F,_,>,<
+
+////////////////////////////////////////
