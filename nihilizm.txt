@@ -1,8 +1,22 @@
 nihilizm
 przejdz
 2
+koniec
 
-/////
+// Input: a binary number n
+// Ouput: accepts if n is a palindrome
+// Example: accepts 10101
+//
+// Palindrome Algorithm
+// for Turing Machine
+// from TuringMachineSimulator
+//
+// --------- States -----------|
+// qCopy - copy to second tape |
+// qReturn - return first tape |
+// qTest - Test each character |
+// qaccept - accepting state   |
+//-----------------------------|
 
 kod2,0,A
 kod2,0,A,>,-
